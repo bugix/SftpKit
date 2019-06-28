@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4F535D8022C6483B008E6ECB /* SftpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F535D7E22C6483B008E6ECB /* SftpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F535D8722C64DC0008E6ECB /* SftpSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F535D8622C64DC0008E6ECB /* SftpSession.swift */; };
+		4F535DA722C65470008E6ECB /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F535DA622C65470008E6ECB /* DNS.swift */; };
+		4F535DA922C655D2008E6ECB /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F535DA822C655D2008E6ECB /* Checksum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		4F535D7E22C6483B008E6ECB /* SftpKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SftpKit.h; sourceTree = "<group>"; };
 		4F535D7F22C6483B008E6ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F535D8622C64DC0008E6ECB /* SftpSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SftpSession.swift; sourceTree = "<group>"; };
+		4F535DA622C65470008E6ECB /* DNS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNS.swift; sourceTree = "<group>"; };
+		4F535DA822C655D2008E6ECB /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				4F535D8622C64DC0008E6ECB /* SftpSession.swift */,
 				4F535D7E22C6483B008E6ECB /* SftpKit.h */,
 				4F535D7F22C6483B008E6ECB /* Info.plist */,
+				4F535DA622C65470008E6ECB /* DNS.swift */,
+				4F535DA822C655D2008E6ECB /* Checksum.swift */,
 			);
 			path = SftpKit;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F535D8722C64DC0008E6ECB /* SftpSession.swift in Sources */,
+				4F535DA922C655D2008E6ECB /* Checksum.swift in Sources */,
+				4F535DA722C65470008E6ECB /* DNS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

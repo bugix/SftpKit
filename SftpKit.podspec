@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'SftpKit'
-  spec.version          = '0.0.1'
+  spec.version          = '0.0.2'
   spec.summary          = 'A tiny Swift SSH framework that wraps libssh2.'
   spec.homepage         = 'https://github.com/bugix/SftpKit'
   spec.license          = 'MIT'

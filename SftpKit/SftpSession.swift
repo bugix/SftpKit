@@ -9,11 +9,11 @@
 import Foundation
 import Libssh2
 
-struct SftpError: Error {
+public struct SftpError: Error {
     let reason: String
 }
 
-class SftpSession {
+public class SftpSession {
 
     let hostname: String
     let username: String
@@ -21,13 +21,13 @@ class SftpSession {
 
     var cancel = false
 
-    init(hostname: String, username: String, password: String) {
+    public init(hostname: String, username: String, password: String) {
         self.hostname = hostname
         self.username = username
         self.password = password
     }
 
-    func download(file pathAndFileName: String, md5: String, failure: (SftpError) -> Void, success: () -> Void, progress: (_ bytesRead: Int, _ totalBytes: Int) -> Void) {
+    public func download(file pathAndFileName: String, md5: String, failure: (SftpError) -> Void, success: () -> Void, progress: (_ bytesRead: Int, _ totalBytes: Int) -> Void) {
 
         let fileName = (pathAndFileName as NSString).lastPathComponent
 
@@ -171,7 +171,7 @@ class SftpSession {
 
     }
 
-    func write(data: Data, path: String, filename: String, success: () -> Void, failure: (SftpError) -> Void) {
+    public func write(data: Data, path: String, filename: String, success: () -> Void, failure: (SftpError) -> Void) {
 
         guard libssh2_init(0) == 0 else {
             failure(SftpError(reason: "libssh2_init"))
